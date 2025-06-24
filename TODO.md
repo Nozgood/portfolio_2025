@@ -1,4 +1,6 @@
 - [x] set up Vite and React
 - [x] set up Tailwind
-- [ ] set up a design system with Tailwind (font, padding...)
-
+- [x] set up a design system with Tailwind (font, padding...) => i've just set up the colors but it seems that design system is not really useful with tailwind
+- [x] write header
+    - [ ] create a logo ?
+- [ ] write the hero section
