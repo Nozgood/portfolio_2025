@@ -17,8 +17,6 @@ function Header() {
 			<a href="https://github.com/Nozgood" target="_blank" rel="noopener noreferrer" aria-label="Github">
 				<FaGithub size={24} />
 			</a>
-
-
 		</header>
 	)
 
