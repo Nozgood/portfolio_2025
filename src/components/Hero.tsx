@@ -15,9 +15,6 @@ function Hero() {
 					</p>
 				</article>
 			</section>
-			<div className="max-w-4xl mx-auto px-6 m-7">
-				<div className="border-t border-gray-200"></div>
-			</div>
 		</>
 	)
 }

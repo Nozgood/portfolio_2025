@@ -49,10 +49,9 @@ function Work() {
 
 	return (
 		<>
-			<section className="py-16" id="Work">
-				<div className="max-w-4xl mx-auto px-6">
+			<section className="" id="Work">
+				<div className="max-w-4xl mx-auto">
 					<h2 className="text-3xl font-normal mb-12">Work</h2>
-
 					<div className="space-y-16">
 						{workItems.map((item, index) => (
 							<article key={index} className="group">
@@ -112,11 +111,6 @@ function Work() {
 					</div>
 				</div>
 			</section>
-
-			{/* Separator */}
-			<div className="max-w-4xl mx-auto px-6">
-				<div className="border-t border-gray-200"></div>
-			</div>
 		</>
 	);
 }
