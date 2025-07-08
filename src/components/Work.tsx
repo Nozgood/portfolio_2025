@@ -11,38 +11,40 @@ interface WorkItem {
 function Work() {
 	const workItems: WorkItem[] = [
 		{
-			title: "E-commerce Platform Redesign",
-			description: "Led the complete redesign of the checkout flow, resulting in a 40% increase in conversion rates and improved user experience across mobile and desktop.",
-			year: "2023",
+			title: "New Project Development",
+			description: "Currently developing a new project from scratch. The project utilizes technologies including gRPC services, GORM (SQL ORM), caching with Redis.",
+			year: "2025",
 			company: "Bliink",
-			technologies: ["React", "Node.js", "PostgreSQL", "Redis"],
+			technologies: ["Golang", "gRPC", "SQL", "Redis", "Graphql"],
+			link: "#",
+			featured: false
+		},
+
+		{
+			title: "Advertising Campaign Forecasting Dashboard",
+			description: "Enhanced the advertising campaign dashboard by implementing a predictive forecasting tool using linear regression with the gonum library and React Charts for data visualization. This improvement enables the AdOps team to conduct more effective campaign monitoring and management through data-driven predictive analysis.",
+			year: "2024",
+			company: "Bliink",
+			technologies: ["Golang", "React", "MongoDB", "Kubernetes CronJob"],
 			link: "#",
 			featured: true
 		},
 		{
-			title: "API Management Dashboard",
-			description: "Developed a comprehensive dashboard for managing microservices, monitoring performance metrics, and handling real-time data visualization.",
+			title: "KPI Discrepancy Monitoring Tool",
+			description: "Built an automated ETL pipeline that extracts and processes CSV/Excel files from emails using Golang, stores KPIs in MongoDB, and runs with Slack alerts for threshold breaches. This system significantly improves the team's ability to track key performance indicators and quickly identify and address discrepancies with partners.",
 			year: "2023",
 			company: "Bliink",
-			technologies: ["Vue.js", "Python", "FastAPI", "Docker"],
+			technologies: ["Golang", "MongoDB"],
 			link: "#"
 		},
 		{
-			title: "Real-time Analytics System",
-			description: "Built a scalable analytics platform processing millions of events daily, providing insights for digital advertising campaigns.",
-			year: "2022",
+			title: "Partners Inventory Synchronization system",
+			description: "Developed a scalable inventory synchronization system that integrates with partner APIs through standardized interface contracts and asynchronous pub/sub architecture. The system optimizes inventory management across multiple partners, directly enhancing advertising placement attractiveness and revenue.",
+			year: "2023",
 			company: "Bliink",
-			technologies: ["Node.js", "Kafka", "ClickHouse", "GraphQL"],
+			technologies: ["Golang", "Google Cloud Pub/Sub"],
 			link: "#"
 		},
-		{
-			title: "Mobile App Backend",
-			description: "Architected and implemented the backend infrastructure for a social media application with real-time messaging capabilities.",
-			year: "2022",
-			company: "Freelance",
-			technologies: ["Express.js", "MongoDB", "WebSocket", "AWS"],
-			link: "#"
-		}
 	];
 
 	return (
