@@ -49,7 +49,7 @@ function Work() {
 
 	return (
 		<>
-			<section className="py-16">
+			<section className="py-16" id="Work">
 				<div className="max-w-4xl mx-auto px-6">
 					<h2 className="text-3xl font-normal mb-12">Work</h2>
 
