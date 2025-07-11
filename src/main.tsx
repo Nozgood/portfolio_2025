@@ -1,19 +1,17 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Work from './components/Work'
-import Separator from './components/Separator'
+import Home from './pages/Home'
+import Blog from './pages/Blog'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 createRoot(document.getElementById('root')!).render(
-	<StrictMode>
-		<Header />
-		<main className='max-w-screen-2xl mx-auto sm: p-8 md:p-16'>
-			<Hero />
-			<Separator />
-			<Work />
-			<Separator />
-		</main>
-	</StrictMode>,
+    <StrictMode>
+        <Router>
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/blog' element={<Blog />} />
+            </Routes>
+        </Router>
+    </StrictMode>
 )
