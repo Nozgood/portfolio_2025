@@ -1,6 +1,5 @@
-- [x] set up Vite and React
-- [x] set up Tailwind
-- [x] set up a design system with Tailwind (font, padding...) => i've just set up the colors but it seems that design system is not really useful with tailwind
-- [x] write header
-    - [ ] create a logo ?
-- [ ] write the hero section
+- [x] add writing section on home page
+- [x] set routing on homepage to writing page
+- [ ] develop writing page
+    - [ ] fix the routing to the "Writing" section 
+- [ ] find the best way to store my articles (think little)
