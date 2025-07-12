@@ -2,10 +2,12 @@ import { Link, useParams } from "react-router-dom"
 import { getBlogPost, type BlogPost } from "../data/blogPosts"
 import Separator from "../components/Separator"
 import { ArrowRight } from 'lucide-react'
+import { loadMarkdownBlogPost } from "../utils/markdownloader"
 
 export default function BlogPost() {
     const queryParams = useParams<{ slug: string }>()
-    console.log("slug from query", queryParams)
+
+    loadMarkdownBlogPost("test")
 
     const post: BlogPost | undefined = queryParams ? getBlogPost(queryParams.slug) : undefined
 

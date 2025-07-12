@@ -1,9 +1,37 @@
 import { Link } from "react-router-dom"
 import { getPosts } from "../data/blogPosts"
+import { loadAllBlogPostsFrontMatter } from "../utils/markdownloader"
+import { useEffect, useState } from "react"
 
 export function Writing() {
     const blogPosts = getPosts()
-    console.log(blogPosts)
+
+
+
+    const [metadata, setMetadata] = useState([])
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(null)
+
+
+
+    useEffect(() => {
+        async function fetchBlogPosts() {
+            try {
+                const postsMetadata = await loadAllBlogPostsFrontMatter()
+                setMetadata(postsMetadata)
+            } catch (error) { setError(error) } finally { setLoading(false) }
+        }
+
+        fetchBlogPosts()
+    }, [])
+
+    if (loading) return <div>loading ...</div>
+    if (error) return <div>error </div>
+
+
+    console.log(metadata)
+
+
     return <>
         <section id="Writing">
             <div className="max-w-4xl mx-auto" >
