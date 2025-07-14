@@ -1,7 +1,7 @@
 ---
 id: 2
-title: "Blog Post Test 2"
-slug: "test2"
+title: "Blog Post Test Markdown 2"
+slug: "test_markdown_2"
 date: "July 12, 2025"
 desc: "prout"
 author: "nowfeel.dev"

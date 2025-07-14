@@ -1,28 +1,40 @@
 import { Link, useParams } from "react-router-dom"
-import { getBlogPost, type BlogPost } from "../data/blogPosts"
 import Separator from "../components/Separator"
 import { ArrowRight } from 'lucide-react'
-import { loadMarkdownBlogPost } from "../utils/markdownloader"
+import { loadMarkdownBlogPost, loadSingleBlogPostFrontMatter } from "../utils/markdownloader"
+import { useEffect, useState } from "react"
 
 export default function BlogPost() {
     const queryParams = useParams<{ slug: string }>()
 
-    loadMarkdownBlogPost("test")
+    const [post, setPost] = useState(null)
+    const [metadata, setMetadata] = useState(null)
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(null)
 
-    const post: BlogPost | undefined = queryParams ? getBlogPost(queryParams.slug) : undefined
 
-    if (!post) {
-        return <>
-            <div>404 not found</div>
-        </>
-    }
+    useEffect(() => {
+        async function fetchBlogPost() {
+            try {
+                const post = await loadMarkdownBlogPost(queryParams.slug)
+                const metadata = await loadSingleBlogPostFrontMatter(queryParams.slug)
+                setPost(post)
+                setMetadata(metadata)
+            } catch (error) { setError(error) } finally { setLoading(false) }
+        }
+
+        fetchBlogPost()
+    }, [])
+
+    if (loading) return <><div>loading ...</div></>
+    if (error) return <><div>error ...</div></>
 
     return <>
         <header className="max-w-screen-2xl mx-auto sm: p-8">
             <div className="flex flex-col items-center">
-                <h1 className="text-2xl font-bold mb-12 text-center">{post.title}</h1>
+                <h1 className="text-2xl font-bold mb-12 text-center">{metadata.title}</h1>
                 <p className="text-center text-gray-700">
-                    {post.desc}
+                    {metadata.desc}
                 </p>
             </div>
         </header>
@@ -34,11 +46,11 @@ export default function BlogPost() {
                     <ArrowRight className="w-4 h-4 text-gray-600" />
                     <Link to={"/#Writing"} ><p className="underline">Writing</p></Link >
                     <ArrowRight className="w-4 h-4 text-gray-600" />
-                    <p className="text-gray-600 truncate">{post.title}</p>
+                    <p className="text-gray-600 truncate">{metadata.title}</p>
                 </div>
             </section>
             <section>
-                {post.content}
+                <article dangerouslySetInnerHTML={{ __html: post }} className="prose" ></article>
             </section>
         </main >
     </>

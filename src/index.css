@@ -1,7 +1,12 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 body {
 	font-family: "MesloLGS Nerd Font", sans-serif;
+}
+
+:root {
+    scroll-behavior: smooth;
 }
 
 @theme {

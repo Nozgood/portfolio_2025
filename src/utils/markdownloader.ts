@@ -3,16 +3,16 @@ import fm from "front-matter"
 
 
 // i have to statically add my blog post name to load it
-const staticListOfBlogsPosts = ["test", "test2"]
+const staticListOfBlogsPosts = ["test_markdown", "test_markdown_2"]
 
 /**
     * load the content of a markdown file and translate it into html    
 */
-export async function loadMarkdownBlogPost(slug: string): Promise<String> {
+export async function loadMarkdownBlogPost(slug: string) {
     try {
         const mdFile = await import(`../content/blog/${slug}.md?raw`)
-        const mdContent = mdFile.default
-
+        var mdContent = mdFile.default
+        mdContent = mdContent.replace(/^---\s*\n.*?\n---\s*\n/s, '')
         return marked(mdContent)
 
     } catch (error) {
@@ -30,7 +30,7 @@ export async function loadAllBlogPostsFrontMatter() {
     return AllMdFrontMatter
 }
 
-async function loadSingleBlogPostFrontMatter(slug: string) {
+export async function loadSingleBlogPostFrontMatter(slug: string) {
     try {
         const mdFile = await import(`../content/blog/${slug}.md?raw`)
         const mdContent = mdFile.default
