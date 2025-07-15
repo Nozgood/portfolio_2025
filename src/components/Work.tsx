@@ -19,7 +19,6 @@ function Work() {
             link: "#",
             featured: false
         },
-
         {
             title: "Advertising Campaign Forecasting Dashboard",
             description: "Enhanced the advertising campaign dashboard by implementing a predictive forecasting tool using linear regression with the gonum library and React Charts for data visualization. This improvement enables the AdOps team to conduct more effective campaign monitoring and management through data-driven predictive analysis.",

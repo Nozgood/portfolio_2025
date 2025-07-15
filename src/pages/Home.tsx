@@ -3,8 +3,9 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Separator from "../components/Separator";
 import Work from "../components/Work";
-import { Writing } from "../components/Writing";
+import Writing from "../components/Writing";
 import { useLocation } from "react-router-dom";
+import Experience from "../components/Experience";
 
 function Home() {
     const location = useLocation()
@@ -29,6 +30,9 @@ function Home() {
             <Work />
             <Separator />
             <Writing />
+            <Separator />
+            <Experience />
+            <Separator />
         </main>
     </>
 }

@@ -1,8 +1,8 @@
 function Hero() {
     return (
         <>
-            <section className="mx-auto">
-                <article className="flex flex-col items-center">
+            <section className="max-w-4xl mx-auto">
+                <article className="flex flex-col items-start">
                     <h2 className="text-xl font-medium">Hello,</h2>
                     <h1 className="text-2xl font-bold">My name is Nowfeel </h1>
                     <br />

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { loadAllBlogPostsFrontMatter } from "../utils/markdownloader"
 import { useEffect, useState } from "react"
 
-export function Writing() {
+function Writing() {
     const [metadata, setMetadata] = useState([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
@@ -39,6 +39,8 @@ export function Writing() {
                     ))}
                 </div>
             </div>
-        </section >
+        </section>
     </>
 };
+
+export default Writing;

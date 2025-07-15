@@ -7,7 +7,6 @@ function Header() {
             <div className="hidden md:flex gap-10">
                 <a href="#Work" className="text-xl font-medium" >Work</a>
                 <a href="#Writing" className="text-xl font-medium">Writing</a>
-                <a href="#About" className="text-xl font-medium">About</a>
                 <a href="#Contact" className="text-xl font-medium">Contact</a>
             </div>
         </header>

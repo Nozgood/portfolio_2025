@@ -9,7 +9,13 @@
     - [x] use the meta data to set routes, display title ...
     - [x] render the html of the markdown post in dedicated page
 
-- [ ] add section experiences
-    - [ ] create component in homepage
-    - [ ] add CV and CTA to download it 
+- [x] add section experiences
+    - [x] create component in homepage
+    - [x] add CV and CTA to download it 
+
+- [ ] add section Skills
+    - [ ] follow the design of the template
+
+- [ ] add interests section
+    - [ ] select 12 images 
 
