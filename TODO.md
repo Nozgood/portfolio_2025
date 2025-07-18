@@ -13,8 +13,8 @@
     - [x] create component in homepage
     - [x] add CV and CTA to download it 
 
-- [ ] add section Skills
-    - [ ] follow the design of the template
+- [x] add section Skills
+    - [x] follow the design of the template
 
 - [ ] add interests section
     - [ ] select 12 images 

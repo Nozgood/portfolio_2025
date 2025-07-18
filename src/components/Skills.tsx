@@ -16,7 +16,7 @@ function Skills() {
             <div>
                 {skills.map((skill, index) => (
                     <div key={index}>
-                        <h3 className="text-4xl font-bold">
+                        <h3 className="text-5xl font-medium">
                             {skill}
                         </h3>
                         {index < skills.length - 1 && (
