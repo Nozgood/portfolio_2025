@@ -18,4 +18,7 @@
 
 - [ ] add interests section
     - [ ] select 12 images 
+    - [ ] follow the template design
+
+- [ ] add the scroll effect on medium display for components flex
 
