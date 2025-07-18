@@ -26,30 +26,29 @@ function Experience() {
     ]
 
     return <>
-        <section>
-            <div className="max-w-4xl mx-auto">
-                <h2 className="text-4xl font-normal mb-12">Experience</h2>
-                <div>
-                    {experiences.map((item, index) => (
-                        <article key={index}>
-                            <div className="mb-8">
-                                <h4 className="text-2xl font-medium">
-                                    {item.company}
-                                </h4>
-                                <p className="text-2xl font-normal">
-                                    {item.position}
-                                </p>
-                            </div>
-                            <div>
-                                {item.period}
-                            </div>
-                            {index < experiences.length - 1 && (
-                                <div className="border-t border-gray-100 m-8"></div>
-                            )}
-
-                        </article>
-                    ))}
-                </div>
+        <section className="max-w-4xl mx-auto md:flex justify-between">
+            <div className="">
+                <h2 className="border-t-2 pt-4 text-4xl font-normal mb-12">Experience</h2>
+            </div>
+            <div>
+                {experiences.map((item, index) => (
+                    <article key={index}>
+                        <div className="mb-8">
+                            <h4 className="text-2xl font-medium">
+                                {item.company}
+                            </h4>
+                            <p className="text-2xl font-normal">
+                                {item.position}
+                            </p>
+                        </div>
+                        <div>
+                            {item.period}
+                        </div>
+                        {index < experiences.length - 1 && (
+                            <div className="border-t border-gray-100 m-8"></div>
+                        )}
+                    </article>
+                ))}
                 <div className="mt-4">
                     <a
                         href="/SAFI_Nowfeel_Backend_Developer.pdf"
@@ -59,8 +58,9 @@ function Experience() {
                         See full CV <ArrowRight className="inline w-4 h-4" />
                     </a>
                 </div>
+
             </div>
-        </section>
+        </section >
     </>
 }
 

@@ -22,22 +22,22 @@ function Writing() {
     if (error) return <div>error </div>
 
     return <>
-        <section id="Writing">
-            <div className="max-w-4xl mx-auto" >
-                <h2 className="text-4xl font-normal mb-12">Writing</h2>
-                <div className="space-y-16">
-                    {metadata.map((post, index) => (
-                        <article key={index}>
-                            <Link to={`/blog/${post.slug}`} >
-                                <h3 className="text-xl font-medium group-hover:text-gray-600 transition-colors">{post.title}</h3>
-                                <p className="text-gray-600 text-sm mb-1">{post.date}</p>
-                                {index < metadata.length - 1 &&
-                                    <div className="border-t border-gray-100 mt-16"></div>
-                                }
-                            </Link>
-                        </article>
-                    ))}
-                </div>
+        <section id="Writing" className="max-w-4xl mx-auto md:flex justify-between">
+            <div>
+                <h2 className="border-t-2 pt-4 text-4xl font-normal mb-12">Writing</h2>
+            </div>
+            <div className="space-y-16">
+                {metadata.map((post, index) => (
+                    <article key={index}>
+                        <Link to={`/blog/${post.slug}`} >
+                            <h3 className="text-xl font-medium group-hover:text-gray-600 transition-colors">{post.title}</h3>
+                            <p className="text-gray-600 text-sm mb-1">{post.date}</p>
+                            {index < metadata.length - 1 &&
+                                <div className="border-t border-gray-100 mt-16"></div>
+                            }
+                        </Link>
+                    </article>
+                ))}
             </div>
         </section>
     </>

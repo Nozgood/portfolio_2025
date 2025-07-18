@@ -48,9 +48,9 @@ function Work() {
 
     return (
         <>
-            <section id="Work">
-                <div className="max-w-4xl mx-auto">
-                    <h2 className="text-4xl font-normal mb-12">Work</h2>
+            <section id="Work" className="max-w-4xl mx-auto">
+                <div>
+                    <h2 className="border-t-2 pt-2 text-4xl font-normal mb-12">Work</h2>
                     <div className="space-y-16">
                         {workItems.map((item, index) => (
                             <article key={index}>
