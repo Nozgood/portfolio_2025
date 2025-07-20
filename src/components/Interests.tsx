@@ -1,11 +1,11 @@
-import DeskSetup from "../../public/interests/desk_setup_interest.jpg";
-import Padel from "../../public/interests/padel_interest.jpg";
-import Running from "../../public/interests/running_interest.jpg";
-import Soccer from "../../public/interests/soccer_interest.jpg";
-import Travel from "../../public/interests/travel_interest.jpg";
-import VideoGames from "../../public/interests/video_games_interest.png";
-import Web3 from "../../public/interests/web3_interest.jpg";
-import Coffee from "../../public/interests/coffee_interest.jpg";
+import DeskSetup from "/interests/desk_setup_interest.jpg";
+import Padel from "/interests/padel_interest.jpg";
+import Running from "/interests/running_interest.jpg";
+import Soccer from "/interests/soccer_interest.jpg";
+import Travel from "/interests/travel_interest.jpg";
+import VideoGames from "/interests/video_games_interest.png";
+import Web3 from "/interests/web3_interest.jpg";
+import Coffee from "/interests/coffee_interest.jpg";
 import Computer from "../../public/interests/computer_science_interest.jpg";
 
 const interestsImagesPath = [DeskSetup, Padel, Running, Soccer, Travel, VideoGames, Web3, Coffee, Computer]

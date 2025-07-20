@@ -4,8 +4,6 @@ interface WorkItem {
     year: string;
     company: string;
     technologies: string[];
-    link?: string;
-    featured?: boolean;
 }
 
 function Work() {
@@ -16,8 +14,6 @@ function Work() {
             year: "2025",
             company: "Bliink",
             technologies: ["Golang", "gRPC", "SQL", "Redis", "Graphql"],
-            link: "#",
-            featured: false
         },
         {
             title: "Advertising Campaign Forecasting Dashboard",
@@ -25,8 +21,6 @@ function Work() {
             year: "2024",
             company: "Bliink",
             technologies: ["Golang", "React", "MongoDB", "Kubernetes CronJob"],
-            link: "#",
-            featured: true
         },
         {
             title: "KPI Discrepancy Monitoring Tool",
@@ -34,7 +28,6 @@ function Work() {
             year: "2023",
             company: "Bliink",
             technologies: ["Golang", "MongoDB"],
-            link: "#"
         },
         {
             title: "Partners Inventory Synchronization system",
@@ -42,7 +35,6 @@ function Work() {
             year: "2023",
             company: "Bliink",
             technologies: ["Golang", "Google Cloud Pub/Sub"],
-            link: "#"
         },
     ];
 
@@ -62,24 +54,11 @@ function Work() {
                                                 <h3 className="text-xl font-medium group-hover:text-gray-600 transition-colors">
                                                     {item.title}
                                                 </h3>
-                                                {item.featured && (
-                                                    <span className="bg-black text-white text-xs px-2 py-1 rounded">
-                                                        Featured
-                                                    </span>
-                                                )}
                                             </div>
                                             <p className="text-gray-600 text-sm mb-1">{item.company}</p>
                                         </div>
                                         <div className="flex items-center space-x-4 mt-2 md:mt-0">
                                             <span className="text-gray-500 text-sm">{item.year}</span>
-                                            {item.link && (
-                                                <a
-                                                    href={item.link}
-                                                    className="text-gray-400 hover:text-black transition-colors"
-                                                    aria-label="View project"
-                                                >
-                                                </a>
-                                            )}
                                         </div>
                                     </div>
 

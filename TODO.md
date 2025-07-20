@@ -1,3 +1,6 @@
+**development**
+
+
 - [x] add writing section on home page
 - [x] set routing on homepage to writing page
 - [x] develop writing page
@@ -20,8 +23,7 @@
     - [x] select 9 images 
     - [x] follow the template design
 
-- [ ] add contact section
-- [ ] add footer section
+- [x] add footer section
 
 **deployment**
 

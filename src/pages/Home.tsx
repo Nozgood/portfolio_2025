@@ -8,6 +8,7 @@ import { useLocation } from "react-router-dom";
 import Experience from "../components/Experience";
 import Skills from "../components/Skills";
 import Interests from "../components/Interests";
+import Footer from "../components/Footer";
 
 function Home() {
     const location = useLocation()
@@ -39,6 +40,7 @@ function Home() {
             <Separator />
             <Interests />
         </main>
+        <Footer />
     </>
 }
 

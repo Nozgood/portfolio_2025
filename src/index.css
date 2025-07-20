@@ -9,12 +9,3 @@ body {
     scroll-behavior: smooth;
 }
 
-@theme {
-	--color-main-500: #606c38; /* green */ 
-	--color-second-500: #283618; /* dark green */
-	--color-third-500: #fefae0; /* white */
-	--color-fourth-500: #dda15e; /* orange */
-	--color-fifth-500: #bc6c25; /* orange darker */
-	--hero-height: 500px;
-}
-

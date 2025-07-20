@@ -26,8 +26,8 @@ function Experience() {
     ]
 
     return <>
-        <section className="max-w-4xl mx-auto md:flex justify-between">
-            <div className="">
+        <section className="max-w-4xl mx-auto md:flex md:justify-between">
+            <div className="md:w-3/5">
                 <h2 className="border-t-2 pt-4 text-4xl font-normal mb-12">Experience</h2>
             </div>
             <div>
