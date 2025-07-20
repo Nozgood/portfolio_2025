@@ -23,7 +23,7 @@ function Writing() {
 
     return <>
         <section id="Writing" className="max-w-4xl mx-auto md:flex justify-between">
-            <div className="">
+            <div className="md:w-3/6">
                 <h2 className="border-t-2 pt-4 text-4xl font-normal mb-12">Writing</h2>
             </div>
             <div className="space-y-16">
