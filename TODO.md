@@ -16,9 +16,23 @@
 - [x] add section Skills
     - [x] follow the design of the template
 
-- [ ] add interests section
-    - [ ] select 12 images 
-    - [ ] follow the template design
+- [x] add interests section
+    - [x] select 9 images 
+    - [x] follow the template design
+
+- [ ] add contact section
+- [ ] add footer section
+
+**deployment**
+
+- [ ] build the project
+- [ ] create github action to build in docker image
+- [ ] create github action to deploy on render
+
+**improvements**
 
 - [ ] add the scroll effect on medium display for components flex
+- [ ] select 3 more images for interests 
+- [ ] choose a more explicit image for desk setup interest
+- [ ] deploy the project on my own environment
 
