@@ -1,25 +1,25 @@
-import { Link } from "react-router-dom"
-import { loadAllBlogPostsFrontMatter } from "../utils/markdownloader"
-import { useEffect, useState } from "react"
+// import { Link } from "react-router-dom"
+// import { loadAllBlogPostsFrontMatter } from "../utils/markdownloader"
+// import { useEffect, useState } from "react"
 
 function Writing() {
-    const [metadata, setMetadata] = useState([])
-    const [loading, setLoading] = useState(true)
-    const [error, setError] = useState(null)
-
-    useEffect(() => {
-        async function fetchBlogPosts() {
-            try {
-                const postsMetadata = await loadAllBlogPostsFrontMatter()
-                setMetadata(postsMetadata)
-            } catch (error) { setError(error) } finally { setLoading(false) }
-        }
-
-        fetchBlogPosts()
-    }, [])
-
-    if (loading) return <div>loading ...</div>
-    if (error) return <div>error </div>
+    // const [metadata, setMetadata] = useState([])
+    // const [loading, setLoading] = useState(true)
+    // const [error, setError] = useState(null)
+    //
+    // useEffect(() => {
+    //     async function fetchBlogPosts() {
+    //         try {
+    //             const postsMetadata = await loadAllBlogPostsFrontMatter()
+    //             setMetadata(postsMetadata)
+    //         } catch (error) { setError(error) } finally { setLoading(false) }
+    //     }
+    //
+    //     fetchBlogPosts()
+    // }, [])
+    //
+    // if (loading) return <div>loading ...</div>
+    // if (error) return <div>error </div>
 
     return <>
         <section id="Writing" className="max-w-4xl mx-auto md:flex justify-between">
